@@ -50,6 +50,13 @@ export type ChatMsgInfo = {
     msg: string
 }
 
+export type ChatFileInfo = {
+    username: string,
+    fileId: string,
+    filename: string,
+    size: number
+}
+
 export const enum VideoCodec
 {
     VP9 = 'VP9',
