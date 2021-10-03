@@ -1,7 +1,8 @@
 
 export type HttpMethod = "get" | "options" | "post" | "patch" | "head";
 
-export const enum FileHandlerConstants {
+export const enum FileHandlerConstants
+{
     TUS_VERSION = "1.0.0",
     FILES_ROUTE = "/files"
 }
@@ -34,6 +35,17 @@ interface HttpHeaders extends Dict<string>
      * Directives for caching mechanisms in both requests and responses.
      */
     "Cache-Control"?: string;
+
+    /**
+     * This request and response header MUST consist of one or more comma-separated key-value pairs.
+     * The key and value MUST be separated by a space.
+     * The key MUST NOT contain spaces and commas and MUST NOT be empty.
+     * The key SHOULD be ASCII encoded and the value MUST be Base64 encoded.
+     * All keys MUST be unique.
+     * The value MAY be empty.
+     * In these cases, the space, which would normally separate the key and the value, MAY be left out.
+     */
+    "Upload-Metadata"?: string;
 };
 
 /** For request. */
@@ -47,6 +59,10 @@ export interface IncomingHttpHeaders extends HttpHeaders
      * The Content-Type representation header is used to indicate the original media type of the resource (prior to any content encoding applied for sending).
      */
     "Content-Type"?: string;
+    /**
+     * Non TUS header. This header determines which room has file.
+     */
+    "Room-Id"?: string;
 };
 
 /** For response. */
