@@ -1,5 +1,5 @@
 
-export type HttpMethod = "get" | "options" | "post" | "patch" | "head";
+export type HttpMethod = "GET" | "OPTIONS" | "POST" | "PATCH" | "HEAD";
 
 export const enum FileHandlerConstants
 {
@@ -88,7 +88,7 @@ export interface FileHandlerRequest
 {
     method: HttpMethod;
     path: string;
-    headers: IncomingHttpHeaders;
+    headers?: IncomingHttpHeaders;
 };
 
 export interface FileHandlerResponse
