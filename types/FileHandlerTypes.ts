@@ -93,6 +93,6 @@ export interface FileHandlerRequest
 
 export interface FileHandlerResponse
 {
-    headers: OutgoingHttpHeaders;
+    headers?: OutgoingHttpHeaders;
     statusCode: number;
 };
