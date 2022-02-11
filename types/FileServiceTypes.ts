@@ -1,7 +1,7 @@
 
 export type HttpMethod = "GET" | "OPTIONS" | "POST" | "PATCH" | "HEAD";
 
-export const enum FileHandlerConstants
+export const enum FileServiceConstants
 {
     TUS_VERSION = "1.0.0",
     FILES_ROUTE = "/files"
@@ -84,14 +84,14 @@ export interface OutgoingHttpHeaders extends HttpHeaders
     "Tus-Max-Size"?: string;
 };
 
-export interface FileHandlerRequest
+export interface FileServiceRequest
 {
     method: HttpMethod;
     path: string;
     headers?: IncomingHttpHeaders;
 };
 
-export interface FileHandlerResponse
+export interface FileServiceResponse
 {
     headers?: OutgoingHttpHeaders;
     statusCode: number;

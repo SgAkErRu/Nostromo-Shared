@@ -5,3 +5,8 @@ export type NewRoomInfo = {
     pass: string,
     videoCodec: VideoCodec;
 };
+
+export type RoomLinkInfo = {
+    id: string,
+    name: string;
+};

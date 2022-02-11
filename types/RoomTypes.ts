@@ -1,11 +1,7 @@
 import { types as MediasoupTypes } from "mediasoup-client";
 
-export type SocketId = string;
-// номер комнаты
-export type RoomId = string;
-
-export type NewUserInfo = {
-    id: SocketId,
+export type UserInfo = {
+    id: string,
     name: string;
 };
 
@@ -15,34 +11,34 @@ export type JoinInfo = {
 };
 
 export type NewWebRtcTransportInfo = {
-    id: MediasoupTypes.Transport['id'],
+    id: string,
     iceParameters: MediasoupTypes.IceParameters,
     iceCandidates: MediasoupTypes.IceCandidate[],
     dtlsParameters: MediasoupTypes.DtlsParameters;
 };
 
 export type ConnectWebRtcTransportInfo = {
-    transportId: MediasoupTypes.Transport['id'],
+    transportId: string,
     dtlsParameters: MediasoupTypes.DtlsParameters;
 };
 
 export type NewProducerInfo = {
-    transportId: MediasoupTypes.Transport['id'],
+    transportId: string,
     kind: MediasoupTypes.MediaKind,
     rtpParameters: MediasoupTypes.RtpParameters
 };
 
 export type NewConsumerInfo = {
-    producerUserId: SocketId,
-    id: MediasoupTypes.Consumer['id'],
-    producerId: MediasoupTypes.Producer['id'],
+    producerUserId: string,
+    id: string,
+    producerId: string,
     kind: MediasoupTypes.MediaKind,
     rtpParameters: MediasoupTypes.RtpParameters
 };
 
 export type CloseConsumerInfo = {
-    consumerId: MediasoupTypes.Consumer['id'],
-    producerUserId: SocketId
+    consumerId: string,
+    producerUserId: string
 };
 
 export type ChatMsgInfo = {
