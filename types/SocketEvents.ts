@@ -11,5 +11,8 @@ export const enum SocketEvents
     CreateRoom = "create-room",
     JoinRoom = "join-room",
     RoomDeleted = "room-deleted",
-    RoomCreated = "room-created"
+    RoomCreated = "room-created",
+    MaxAudioBitrate = "max-audio-bitrate",
+    RouterRtpCapabilities = "router-rtp-capabilities",
+    CreateWebRtcTransport = "create-webrtc-transport"
 }
