@@ -14,5 +14,16 @@ export const enum SocketEvents
     RoomCreated = "room-created",
     MaxAudioBitrate = "max-audio-bitrate",
     RouterRtpCapabilities = "router-rtp-capabilities",
-    CreateWebRtcTransport = "create-webrtc-transport"
+    CreateWebRtcTransport = "create-webrtc-transport",
+    CloseTransport = "close-transport",
+    CreateConsumerTransport = "create-consumer-transport",
+    CreateProducerTransport = "create-producer-transport",
+    ConnectWebRtcTransport = "connect-webrtc-transport",
+    Ready = "ready",
+    NewUser = "new-user",
+    CloseConsumer = "close-consumer",
+    PauseConsumer = "pause-consumer",
+    ResumeConsumer = "resume-consumer",
+    NewConsumer = "new-consumer",
+    NewProducer = "new-producer"
 }
