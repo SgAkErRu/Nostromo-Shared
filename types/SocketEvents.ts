@@ -25,5 +25,14 @@ export const enum SocketEvents
     PauseConsumer = "pause-consumer",
     ResumeConsumer = "resume-consumer",
     NewConsumer = "new-consumer",
-    NewProducer = "new-producer"
+    NewProducer = "new-producer",
+    CloseProducer = "close-producer",
+    PauseProducer = "pause-producer",
+    ResumeProducer = "resume-producer",
+    NewUsername = "new-username",
+    ChatMsg = "chat-msg",
+    ChatFile = "chat-file",
+    Disconnect = "disconnect",
+    UserDisconnected = "user-disconnected",
+    NewMaxVideoBitrate = "new-max-video-bitrate"
 }
