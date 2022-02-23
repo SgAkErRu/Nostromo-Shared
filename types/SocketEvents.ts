@@ -36,5 +36,7 @@ export const enum SocketEvents
     UserDisconnected = "user-disconnected",
     NewMaxVideoBitrate = "new-max-video-bitrate",
     KickUser = "kick-user",
-    Redirect = "redirect"
+    Redirect = "redirect",
+    StopUserVideo = "stop-user-video",
+    StopUserAudio = "stop-user-audio"
 }
