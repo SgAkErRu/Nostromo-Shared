@@ -34,5 +34,7 @@ export const enum SocketEvents
     ChatFile = "chat-file",
     Disconnect = "disconnect",
     UserDisconnected = "user-disconnected",
-    NewMaxVideoBitrate = "new-max-video-bitrate"
+    NewMaxVideoBitrate = "new-max-video-bitrate",
+    KickUser = "kick-user",
+    Redirect = "redirect"
 }
