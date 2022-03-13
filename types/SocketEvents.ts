@@ -38,5 +38,6 @@ export const enum SocketEvents
     KickUser = "kick-user",
     Redirect = "redirect",
     StopUserVideo = "stop-user-video",
-    StopUserAudio = "stop-user-audio"
+    StopUserAudio = "stop-user-audio",
+    ChangeUsername = "change-username"
 }
