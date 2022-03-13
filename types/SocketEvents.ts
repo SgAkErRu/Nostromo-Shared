@@ -13,6 +13,7 @@ export const enum SocketEvents
     RoomDeleted = "room-deleted",
     RoomCreated = "room-created",
     MaxAudioBitrate = "max-audio-bitrate",
+    MaxVideoBitrate = "max-video-bitrate",
     RouterRtpCapabilities = "router-rtp-capabilities",
     CreateWebRtcTransport = "create-webrtc-transport",
     CloseTransport = "close-transport",
