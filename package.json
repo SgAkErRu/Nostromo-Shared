@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://gitlab.com/SgAkErRu/nostromo-shared.git"
   },
-  "devDependencies": {
-    "mediasoup-client": "3.6.51"
+  "dependencies": {
+    "mediasoup-client": "^3.6.51"
   }
 }
