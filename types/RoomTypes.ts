@@ -1,5 +1,19 @@
 import { types as MediasoupTypes } from "mediasoup-client";
 
+/** Публичная информация о комнате. */
+export interface PublicRoomInfo
+{
+    id: string;
+    name: string;
+    videoCodec: VideoCodec;
+};
+
+/** Информация о комнате. */
+export interface RoomInfo extends PublicRoomInfo
+{
+    hashPassword: string;
+}
+
 /** Информация о пользователе. */
 export type UserInfo = {
     id: string,

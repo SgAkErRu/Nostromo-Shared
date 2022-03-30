@@ -12,6 +12,7 @@ export const enum SocketEvents
     JoinRoom = "join-room",
     RoomDeleted = "room-deleted",
     RoomCreated = "room-created",
+    RoomNameChanged = "room-name-changed",
     MaxAudioBitrate = "max-audio-bitrate",
     MaxVideoBitrate = "max-video-bitrate",
     RouterRtpCapabilities = "router-rtp-capabilities",
@@ -43,5 +44,7 @@ export const enum SocketEvents
     Redirect = "redirect",
     StopUserVideo = "stop-user-video",
     StopUserAudio = "stop-user-audio",
-    ChangeUsername = "change-username"
+    ChangeUsername = "change-username",
+    ChangeRoomName = "change-room-name",
+    ChangeRoomPass = "change-room-pass"
 }
