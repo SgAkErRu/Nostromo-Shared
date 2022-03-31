@@ -22,7 +22,6 @@ export type UserInfo = {
 
 /** Информация о пользователе, который готов начать обмениваться медиапотоками. */
 export type UserReadyInfo = {
-    name: string,
     rtpCapabilities: MediasoupTypes.RtpCapabilities;
 };
 
@@ -64,13 +63,13 @@ export type CloseConsumerInfo = {
 
 /** Информация о текстовом сообщении в чате. */
 export type ChatMsgInfo = {
-    name: string,
+    userId: string,
     msg: string;
 };
 
 /** Информация о файле в чате. */
 export type ChatFileInfo = {
-    username: string,
+    userId: string,
     fileId: string,
     filename: string,
     size: number;

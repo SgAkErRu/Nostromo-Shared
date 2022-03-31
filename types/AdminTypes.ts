@@ -26,8 +26,21 @@ export interface NewRoomPassInfo
     password: string;
 };
 
+export interface ActionOnUserInfo
+{
+    roomId: string;
+    userId: string;
+}
+
+export interface ChangeUserNameInfo
+{
+    roomId: string;
+    userId: string;
+    username: string;
+}
+
 /**
- * Информация о блокировки пользователя.
+ * Информация о блокировке пользователя.
  * Это не окончательный вариант данной структуры.
  * */
 export interface UserBanInfo
