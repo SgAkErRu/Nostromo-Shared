@@ -46,5 +46,7 @@ export const enum SocketEvents
     StopUserAudio = "stop-user-audio",
     ChangeUsername = "change-username",
     ChangeRoomName = "change-room-name",
-    ChangeRoomPass = "change-room-pass"
+    ChangeRoomPass = "change-room-pass",
+    UserId = "user-id",
+    Username = "username"
 }
