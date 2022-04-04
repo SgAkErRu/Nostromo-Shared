@@ -48,5 +48,7 @@ export const enum SocketEvents
     ChangeRoomName = "change-room-name",
     ChangeRoomPass = "change-room-pass",
     UserId = "user-id",
-    Username = "username"
+    Username = "username",
+    UserAlreadyJoined = "user-already-joined",
+    ForceJoinRoom = "force-join-room"
 }
