@@ -41,24 +41,20 @@ export type ConnectWebRtcTransportInfo = {
 
 /** Информация о новом потоке-производителе. */
 export type NewProducerInfo = {
-    transportId: string,
-    kind: MediasoupTypes.MediaKind,
+    transportId: string;
+    kind: MediasoupTypes.MediaKind;
     rtpParameters: MediasoupTypes.RtpParameters;
+    streamId: string;
 };
 
 /** Информация о новом потоке-потребителе. */
 export type NewConsumerInfo = {
-    producerUserId: string,
-    id: string,
-    producerId: string,
-    kind: MediasoupTypes.MediaKind,
+    id: string;
+    producerId: string;
+    kind: MediasoupTypes.MediaKind;
     rtpParameters: MediasoupTypes.RtpParameters;
-};
-
-/** Информация о закрывающемся потоке-потребителе. */
-export type CloseConsumerInfo = {
-    consumerId: string,
     producerUserId: string;
+    streamId: string;
 };
 
 /** Информация о текстовом сообщении в чате. */
