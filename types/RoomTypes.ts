@@ -57,17 +57,20 @@ export type NewConsumerInfo = {
     streamId: string;
 };
 
-/** Информация о текстовом сообщении в чате. */
-export type ChatMsgInfo = {
-    userId: string,
-    msg: string;
-};
+/** Информация о сообщении в чате. */
+export interface ChatMessage
+{
+    userId: string;
+    type: "text" | "file";
+    datetime: number;
+    content: string | ChatFileInfo;
+}
 
 /** Информация о файле в чате. */
-export type ChatFileInfo = {
-    userId: string,
-    fileId: string,
-    filename: string,
+export interface ChatFileInfo
+{
+    fileId: string;
+    name: string;
     size: number;
 };
 
