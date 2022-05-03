@@ -10,6 +10,8 @@ export const enum SocketEvents
     DeleteRoom = "delete-room",
     CreateRoom = "create-room",
     JoinRoom = "join-room",
+    ClearRoomChat = "clear-room-chat",
+    DeleteRoomFiles = "delete-room-files",
     RoomDeleted = "room-deleted",
     RoomCreated = "room-created",
     RoomNameChanged = "room-name-changed",
