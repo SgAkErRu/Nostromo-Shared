@@ -50,6 +50,7 @@ export const enum SocketEvents
     ChangeUsername = "change-username",
     ChangeRoomName = "change-room-name",
     ChangeRoomPass = "change-room-pass",
+    ChangeRoomSaveChatPolicy = "change-room-save-chat-policy",
     UserId = "user-id",
     Username = "username",
     UserAlreadyJoined = "user-already-joined",

@@ -5,6 +5,7 @@ export interface NewRoomInfo
     name: string;
     password: string;
     videoCodec: VideoCodec;
+    saveChatPolicy: boolean;
 };
 
 export interface UpdateRoomInfo
@@ -12,6 +13,7 @@ export interface UpdateRoomInfo
     id: string;
     name?: string;
     password?: string;
+    saveChatPolicy?: boolean;
 }
 
 export interface NewRoomNameInfo
@@ -24,6 +26,12 @@ export interface NewRoomPassInfo
 {
     id: string;
     password: string;
+};
+
+export interface NewRoomSaveChatPolicyInfo
+{
+    id: string;
+    saveChatPolicy: boolean;
 };
 
 export interface ActionOnUserInfo
