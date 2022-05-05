@@ -1,6 +1,6 @@
 {
   "name": "nostromo-shared",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Shared TypeScript typings for Nostromo and Nostromo Web",
   "author": "SgAkErRu",
   "license": "BSD-3-Clause",
