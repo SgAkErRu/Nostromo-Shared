@@ -40,6 +40,7 @@ export const enum SocketEvents
     UserDisconnected = "user-disconnected",
     NewMaxVideoBitrate = "new-max-video-bitrate",
     KickUser = "kick-user",
+    KickAllUsers = "kick-all-users",
     BanUser = "ban-user",
     BanUserByIp = "ban-user-by-ip",
     UnbanUserByIp = "unban-user-by-ip",
