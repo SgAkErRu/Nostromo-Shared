@@ -13,6 +13,7 @@ export interface RoomInfo extends PublicRoomInfo
 {
     hashPassword: string;
     saveChatPolicy: boolean;
+    symmetricMode: boolean;
 }
 
 /** Информация о пользователе. */
