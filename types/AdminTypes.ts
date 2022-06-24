@@ -6,6 +6,7 @@ export interface NewRoomInfo
     password: string;
     videoCodec: VideoCodec;
     saveChatPolicy: boolean;
+    symmetricMode: boolean;
 };
 
 export interface UpdateRoomInfo
@@ -14,6 +15,7 @@ export interface UpdateRoomInfo
     name?: string;
     password?: string;
     saveChatPolicy?: boolean;
+    symmetricMode?: boolean;
 }
 
 export interface NewRoomNameInfo
@@ -33,6 +35,12 @@ export interface NewRoomSaveChatPolicyInfo
     id: string;
     saveChatPolicy: boolean;
 };
+
+export interface NewRoomModeInfo
+{
+    id: string;
+    symmetricMode: boolean;
+}
 
 export interface ActionOnUserInfo
 {

@@ -40,6 +40,7 @@ export const enum SocketEvents
     UserDisconnected = "user-disconnected",
     NewMaxVideoBitrate = "new-max-video-bitrate",
     KickUser = "kick-user",
+    KickAllUsers = "kick-all-users",
     BanUser = "ban-user",
     BanUserByIp = "ban-user-by-ip",
     UnbanUserByIp = "unban-user-by-ip",
@@ -48,11 +49,15 @@ export const enum SocketEvents
     StopUserCam = "stop-user-cam",
     StopUserAudio = "stop-user-audio",
     ChangeUsername = "change-username",
+    AllowUserToSpeak = "allow-user-to-speak",
+    ForbidUserToSpeak = "forbid-user-to-speak",
     ChangeRoomName = "change-room-name",
     ChangeRoomPass = "change-room-pass",
     ChangeRoomSaveChatPolicy = "change-room-save-chat-policy",
+    ChangeRoomMode = "change-room-mode",
     UserId = "user-id",
     Username = "username",
     UserAlreadyJoined = "user-already-joined",
-    ForceJoinRoom = "force-join-room"
+    ForceJoinRoom = "force-join-room",
+    IsAllowedToSpeak = "is-allowed-to-speak"
 }
