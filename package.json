@@ -1,6 +1,6 @@
 {
   "name": "nostromo-shared",
-  "version": "0.3.2",
+  "version": "0.4.0-dev",
   "description": "Shared TypeScript typings for Nostromo and Nostromo Web",
   "author": "SgAkErRu",
   "license": "BSD-3-Clause",
@@ -10,6 +10,6 @@
     "url": "git+https://gitlab.com/SgAkErRu/nostromo-shared.git"
   },
   "dependencies": {
-    "mediasoup-client": "^3.6.51"
+    "mediasoup-client": "3.6.51"
   }
 }
