@@ -87,5 +87,6 @@ export const enum VideoCodec
 export const enum PrefixConstants
 {
     KILO = 1024,
-    MEGA = 1024 * 1024
+    MEGA = 1024 * 1024,
+    GIGA = 1024 * 1024 * 1024
 }
