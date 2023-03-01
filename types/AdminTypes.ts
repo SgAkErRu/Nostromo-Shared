@@ -18,13 +18,13 @@ export interface UpdateRoomInfo
     symmetricMode?: boolean;
 }
 
-export interface NewRoomNameInfo
+export interface RoomNameInfo
 {
     id: string;
     name: string;
 };
 
-export interface NewRoomPassInfo
+export interface RoomPassInfo
 {
     id: string;
     password: string;
