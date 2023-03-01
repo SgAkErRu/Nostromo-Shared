@@ -59,5 +59,6 @@ export const enum SocketEvents
     Username = "username",
     UserAlreadyJoined = "user-already-joined",
     ForceJoinRoom = "force-join-room",
-    IsAllowedToSpeak = "is-allowed-to-speak"
+    IsAllowedToSpeak = "is-allowed-to-speak",
+    GetRoomHashPass = "get-room-hash-pass"
 }
